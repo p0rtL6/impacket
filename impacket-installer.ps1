@@ -45,7 +45,7 @@ $commands = @{
                 Description = 'The source to download from (USER/REPO/BRANCh uses Github)'
                 Order       = 2
                 Required    = $false
-                Default     = New-Object System.Uri('https://github.com/p0rtL6/impacket/archive/refs/heads/windows.zip')
+                Default     = New-Object System.Uri('https://github.com/p0rtL6/impacket/archive/refs/heads/windows-all-features.zip')
                 Type        = 'USER/REPO/BRANCH or URL or DIRECTORY'
                 CustomType  = @{
                     ReturnType = [Uri]
@@ -184,6 +184,10 @@ $availableTools = @(
     'wmiexec'
     'wmipersist'
     'wmiquery'
+    'krbrelayx'
+    'addspn'
+    'dnstool'
+    'printerbug'
     'all'
 )
 
